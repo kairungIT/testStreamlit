@@ -43,9 +43,9 @@ a=dt['sepal.length'].mean()
 b=dt['sepal.width'].mean()
 c=dt['petal.length'].mean()
 d=dt['petal.width'].mean()
-dx=[a,b,c,d]
-cx=pd.DataFrame(dx,index=["sepal.length", "sepal.width", "petal.length","petal.width"])
-st.bar_chart(cx)
+dxt=[a,b,c,d]
+cxx=pd.DataFrame(dxt,index=["sepal.length", "sepal.width", "petal.length","petal.width"])
+st.area_chart(cxx)
 
 
 st.write('ค่ามากที่สุด')
@@ -57,17 +57,11 @@ cl24.write(dt['petal.width'].max())
 
 import numpy as np
 import matplotlib.pyplot as plt
-
 st.write("Pie_Chart")
-a=15
-b=30
-c=25
-d=30
-dx=np.array([a,b,c,d])
-labels=["sepal.length", "sepal.width", "petal.length","petal.width"]
+ss=np.array([35,25,25,15])
+mylabels=["a", "b", "C","D"]
 myexplode=[0.2,0,0,0]
-
-plt.pie(dx,labels=labels,explode=myexplode)
+plt.pie(ss,labels=mylabels,explode=myexplode)
 plt.show()
 
 st.write('ค่าน้อยที่สุด')
@@ -78,11 +72,6 @@ cl33.write(dt['petal.length'].min())
 cl34.write(dt['petal.width'].min())
 
 st.write("Line_Chart")
-a=5
-b=7
-c=10
-d=15
-dx=np.array([a,b,c,d])
-
-plt.plot(dx,'o:r',ms=10)
+cc=np.array([3,8,1,10])
+plt.plot(cc,'o:r',ms=10)
 plt.show()

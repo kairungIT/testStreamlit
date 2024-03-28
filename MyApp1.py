@@ -45,7 +45,7 @@ c=dt['petal.length'].mean()
 d=dt['petal.width'].mean()
 dxt=[a,b,c,d]
 cxx=pd.DataFrame(dxt,index=["sepal.length", "sepal.width", "petal.length","petal.width"])
-st.area_chart(cxx,x="sepal.length",y="sepal.width",color=["#ff0000","#0000ff"])
+st.area_chart(cxx)
 
 
 st.write('ค่ามากที่สุด')

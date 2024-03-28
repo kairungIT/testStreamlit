@@ -59,10 +59,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 st.write("Pie_Chart")
-a=dt['sepal.length'].max()
-b=dt['sepal.width'].max()
-c=dt['petal.length'].max()
-d=dt['petal.width'].max()
+a=15
+b=30
+c=25
+d=30
 dx=np.array([a,b,c,d])
 labels=["sepal.length", "sepal.width", "petal.length","petal.width"]
 myexplode=[0.2,0,0,0]
@@ -78,10 +78,10 @@ cl33.write(dt['petal.length'].min())
 cl34.write(dt['petal.width'].min())
 
 st.write("Line_Chart")
-a=dt['sepal.length'].min()
-b=dt['sepal.width'].min()
-c=dt['petal.length'].min()
-d=dt['petal.width'].min()
+a=5
+b=7
+c=10
+d=15
 dx=np.array([a,b,c,d])
 
 plt.plot(dx,'o:r',ms=10)

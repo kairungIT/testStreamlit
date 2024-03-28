@@ -45,7 +45,7 @@ c=dt['petal.length'].mean()
 d=dt['petal.width'].mean()
 dxt=[a,b,c,d]
 cxx=pd.DataFrame(dxt,index=["sepal.length", "sepal.width", "petal.length","petal.width"])
-st.area_chart(cxx)
+st.area_chart(cxx,color=["#ff0000","#0000ff"])
 
 
 st.write('ค่ามากที่สุด')
@@ -74,6 +74,5 @@ cl33.write(dt['petal.length'].min())
 cl34.write(dt['petal.width'].min())
 
 st.write("Line_Chart")
-cc=np.array([3,8,1,10])
-plt.plot(cc,'o:r',ms=10)
-plt.show()
+cc=[3,8,1,10]
+st.line_chart(cc,'o:r',ms=10)

@@ -63,7 +63,7 @@ a=dt['sepal.length'].max()
 b=dt['sepal.width'].max()
 c=dt['petal.length'].max()
 d=dt['petal.width'].max()
-dx=np.array[a,b,c,d]
+dx=np.array([a,b,c,d])
 labels=["sepal.length", "sepal.width", "petal.length","petal.width"]
 myexplode=[0.2,0,0,0]
 
@@ -82,7 +82,7 @@ a=dt['sepal.length'].min()
 b=dt['sepal.width'].min()
 c=dt['petal.length'].min()
 d=dt['petal.width'].min()
-dx=np.array[a,b,c,d]
+dx=np.array([a,b,c,d])
 
 plt.plot(dx,'o:r',ms=10)
 plt.show()

@@ -21,11 +21,11 @@ cl1.write(dt['sepal.length'].sum())
 cl2.write(dt['sepal.width'].sum())
 cl3.write(dt['petal.length'].sum())
 cl4.write(dt['petal.width'].sum())
-
+st.write("xxx")
 a=dt['sepal.length'].sum()
 b=dt['sepal.width'].sum()
 c=dt['petal.length'].sum()
-dx=pd.DataFrame(a,b,c)
+dx=pd.DataFrame(a,b,c,columns=["a","b","c"])
 st.bar_chart(dx)
 
 st.write('ค่าเฉลี่ย')

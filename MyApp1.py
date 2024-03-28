@@ -26,9 +26,9 @@ st.write("xxx")
 a=dt['sepal.length'].sum()
 b=dt['sepal.width'].sum()
 c=dt['petal.length'].sum()
-
-dx=pd.DataFrame([a,b,c],columns=["a","b","c"])
-st.bar_chart(dx)
+dx=[a,b,c]
+cx=pd.DataFrame(dx,columns=["a","b","c"])
+st.bar_chart(cx)
 
 st.write('ค่าเฉลี่ย')
 cl11,cl12,cl13,cl14=st.columns(4)

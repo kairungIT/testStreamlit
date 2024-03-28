@@ -57,12 +57,14 @@ cl24.write(dt['petal.width'].max())
 
 import numpy as np
 import matplotlib.pyplot as plt
-st.write("Pie_Chart")
-ss=np.array([35,25,25,15])
-mylabels=["a", "b", "C","D"]
-myexplode=[0.2,0,0,0]
-plt.pie(ss,labels=mylabels,explode=myexplode)
-plt.show()
+labels = ['Men', 'Women','','']
+sizes = [35,25,15,25]
+explode = (0, 0.1,0,0) 
+fig1, ax1 = plt.subplots()
+ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+        shadow=True, startangle=90)
+st.pyplot(fig1)
+
 
 st.write('ค่าน้อยที่สุด')
 cl31,cl32,cl33,cl34=st.columns(4)
